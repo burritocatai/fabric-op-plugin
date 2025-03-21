@@ -1,12 +1,11 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/go
+
 {
 	"name": "Go",
-	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/go:1.23-bookworm"
-
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
+	"image": "mcr.microsoft.com/devcontainers/go:1.23-bookworm",
+	"features": {
+		"ghcr.io/jungaretti/features/make:1": {},
+		"ghcr.io/flexwie/devcontainer-features/op:1": {}
+	}
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
